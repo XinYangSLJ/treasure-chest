@@ -15,6 +15,7 @@
 
   <modules>
     <module>design-patterns</module>
+    <module>dev-template</module>
   </modules>
 
   <properties>
