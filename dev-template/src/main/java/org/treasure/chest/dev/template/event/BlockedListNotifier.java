@@ -3,12 +3,11 @@ package org.treasure.chest.dev.template.event;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
 
 /**
  * @author lj
  * @version 1.0.0
- * @Description
+ * @Description 事件监听及通知
  * @createTime 2021-11-05 18:06
  */
 @Component

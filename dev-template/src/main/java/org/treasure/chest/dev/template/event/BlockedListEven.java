@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationEvent;
 /**
  * @author lj
  * @version 1.0.0
- * @Description
+ * @Description 封装事件信息 基于 观察者模式
  * @createTime 2021-11-05 17:14
  */
 @Data

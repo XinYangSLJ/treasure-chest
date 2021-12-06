@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @author lj
  * @version 1.0.0
- * @Description
+ * @Description 事件发布
  * @createTime 2021-11-05 17:36
  */
 @Component
