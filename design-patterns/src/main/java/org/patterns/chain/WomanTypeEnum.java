@@ -7,9 +7,9 @@ import java.util.Arrays;
 
 public enum WomanTypeEnum {
 
-    GIRL(1,"未成年"),
-    HAS_HUSBAND(2,"已婚未育"),
-    HAS_SON(3,"丧夫，有一子"),
+    FATHER(1,"未成年,凡事要听家长的意见"),
+    HAS_HUSBAND(2,"已婚，凡事要和丈夫商量"),
+    HAS_SON(3,"老伴不在了，有事情找孩子"),
     ;
 
     WomanTypeEnum(Integer code, String value){

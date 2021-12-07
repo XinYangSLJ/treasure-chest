@@ -10,11 +10,11 @@ public class HusbandHandler extends AbstractHandler{
 
     HusbandHandler(){
         super();
-        this.handleType = 2;
+        this.handleType = WomanTypeEnum.HAS_HUSBAND.getCode();
     }
 
     @Override
     void response() {
-        System.out.println("丈夫同意你的请求");
+        System.out.println("丈夫同意你的意见");
     }
 }

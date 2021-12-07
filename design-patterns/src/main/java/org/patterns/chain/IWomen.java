@@ -8,7 +8,6 @@ package org.patterns.chain;
  */
 public interface IWomen {
 
-
     int getType();
 
     String getRequest();

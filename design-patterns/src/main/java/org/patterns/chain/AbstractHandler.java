@@ -1,5 +1,7 @@
 package org.patterns.chain;
 
+import java.util.Objects;
+
 /**
  * @author lj
  * @version 1.0.0
@@ -15,10 +17,15 @@ public abstract class AbstractHandler {
     final void handleMessage(IWomen women){
         int type = women.getType();
         if(handleType.equals(type)){
+            System.out.println("======="+WomanTypeEnum.getEnumByCode(type).getValue());
             System.out.println(women.getRequest());
             response();
         }else {
-            nextHandler.handleMessage(women);
+            if(Objects.isNull(nextHandler)){
+                System.out.println("不受约束，自行决定！");
+            }else {
+                nextHandler.handleMessage(women);
+            }
         }
     }
 

@@ -10,11 +10,11 @@ public class SonHandler extends AbstractHandler{
 
     SonHandler(){
         super();
-        this.handleType = 3;
+        this.handleType = WomanTypeEnum.HAS_SON.getCode();
     }
 
     @Override
     void response() {
-        System.out.println("儿子同意你的请求");
+        System.out.println("孩子们都支持你的想法");
     }
 }

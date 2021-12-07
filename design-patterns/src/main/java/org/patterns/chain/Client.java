@@ -9,9 +9,12 @@ package org.patterns.chain;
 public class Client {
 
     public static void main(String[] args) {
-        IWomen tong = new TongXianYuImpl();
+        IWomen tong = new TongXiangYuImpl(WomanTypeEnum.FATHER.getCode(), "我要去动物园看大熊猫！");
         FatherHandler handler = new FatherHandler();
-        handler.setNext(new HusbandHandler());
+        HusbandHandler husbandHandler = new HusbandHandler();
+        SonHandler sonHandler = new SonHandler();
+        handler.setNext(husbandHandler);
+        husbandHandler.setNext(sonHandler);
         handler.handleMessage(tong);
     }
 

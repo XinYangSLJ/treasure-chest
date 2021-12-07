@@ -10,7 +10,7 @@ public class FatherHandler extends AbstractHandler{
 
     FatherHandler(){
         super();
-        this.handleType = 1;
+        this.handleType = WomanTypeEnum.FATHER.getCode();
     }
 
     @Override
