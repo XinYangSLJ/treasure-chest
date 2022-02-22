@@ -113,7 +113,7 @@ public class DateUtils {
      * @return 秒级时间戳
      */
     public static Long stringToSecondTime(String time, PatternTime patternTime) {
-        ZonedDateTime localTime = ZonedDateTime.parse(time, DateTimeFormatter.ofPattern(patternTime.getPattern()));
+        ZonedDateTime localTime = ZonedDateTime.parse(time, DateTimeFormatter.ofPattern(patternTime.getPattern()).withZone(ZoneId.systemDefault()));
         return localTime.toEpochSecond();
     }
 
@@ -124,7 +124,7 @@ public class DateUtils {
      * @return 秒级时间戳
      */
     public static Long stringToSecondTime(String time, String patternTime) {
-        ZonedDateTime localTime = ZonedDateTime.parse(time, DateTimeFormatter.ofPattern(patternTime));
+        ZonedDateTime localTime = ZonedDateTime.parse(time, DateTimeFormatter.ofPattern(patternTime).withZone(ZoneId.systemDefault()));
         return localTime.toEpochSecond();
     }
 

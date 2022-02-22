@@ -3,7 +3,7 @@ package org.patterns.chain;
 /**
  * @author lj
  * @version 1.0.0
- * @Description
+ * @Description 责任链模式
  * @createTime 2021-12-07 13:50
  */
 public class Client {
