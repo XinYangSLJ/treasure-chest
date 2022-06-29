@@ -1,0 +1,27 @@
+
+参考博客：https://blog.csdn.net/son_of_a__bitch/article/details/109390051
+背景
+在使用freemark模板生成Html转为img文件的时，中文会变成小方块
+原因分析：
+BufferedImage在使用的时候若内容中包含中文应该是调用到当前操作系统中匹配的字体类型，若没有找到就会出现乱码。
+
+在linux中安装字体类型
+
+在linux中执行以下命令：
+cd /usr/share/fonts  (若fonts不存在则创建)
+mkdir winFont  （创建好目录后，将文件simsun.ttc拷到当前文件中）
+mkfontdir (执行成功后会出现fonts.dir文件夹)
+mkfontscale (执行成功后会出现fonts.scale文件夹)
+最后如果执行成功了需要重新启动出现问题的系统服务。（重启springboot项目即可生效）
+注意：如果字体未生效，强制更新字体缓存，执行命令：
+fc-cache –fv
+
+若在执行mkfontdir的过程中出现错误提示：mkfontdir: command not found
+安装下面命令
+yum install fontconfig
+yum install mkfontscale
+yum install fontscale
+
+
+
+
