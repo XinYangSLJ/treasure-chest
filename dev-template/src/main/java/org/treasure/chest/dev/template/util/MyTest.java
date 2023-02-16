@@ -49,5 +49,8 @@ public class MyTest {
         String str1 = "28-2500193";
         String[] outerShopCustomerCodeArray = str1.split("-");
         System.out.println(""+ outerShopCustomerCodeArray[1] +"    " + outerShopCustomerCodeArray[0]);
+
+
+
     }
 }
